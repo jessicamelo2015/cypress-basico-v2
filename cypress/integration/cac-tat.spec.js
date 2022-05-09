@@ -12,7 +12,7 @@
       cy.get('#lastName').type('melo')
       cy.get('#email').type('jessica@gmail.com')
       cy.get('#open-text-area ').type(longText,{delay: 0 })
-      cy.contains('button','Enviar').click()
+      cy.contains('button','Enviar')
       cy.get('.success').should('be.visible')
      });
      it('exibe mensagem de erro ao submeter o formulário com um email com formatação inválida',function(){
